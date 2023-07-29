@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perulangan</title>
+</head>
+<style>
+    body {
+        background-color: rgb(46, 46, 47);
+        color: rgb(225, 206, 146);
+    }
+</style>
+<body>
+    <div id="jobList"></div>
+    
+    <script>
+    const list = ["Hello", "Hello", "Hello", "Hello", "Hello"];
+    for (let i = 0; i < list.length; i++) {
+            const heading = document.createElement('h1');
+            heading.textContent = list[i] + " ";
+            document.getElementById("jobList").appendChild(heading);
+        }
+    </script>
+</body>
+</html>
